@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# Author Markku Rantanen, markku@arista.com
+#
 from jsonrpclib import Server
 import optparse
 
