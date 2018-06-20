@@ -1,6 +1,8 @@
-#!/usr/bin/python
 # Author Markku Rantanen, markku@arista.com
+# This script creates Arista MSS service on CVX node as per given options.
 #
+#!/usr/bin/python
+
 from jsonrpclib import Server
 import optparse
 
@@ -23,7 +25,7 @@ op.add_option( '-s', '--state', dest='state', action='store', help='State, optio
 op.add_option( '-x', '--vxlan', dest='vxlan', action='store', help='Enable VXLAN service under CVX', type='string')
 op.add_option( '-u', '--userid', dest='userid', action='store', help='Userid', type='string')
 op.add_option( '-p', '--password', dest='passwd', action='store', help='Password', type='string')
-op.add_option( '-y', '--status', dest='status', action='store', help='Check MSS and VXLAN services status on selected CVX', type='string')
+op.add_option( '-S', '--status', dest='status', action='store', help='Check MSS and VXLAN services status on selected CVX', type='string')
 
 opts, _ = op.parse_args()
 
